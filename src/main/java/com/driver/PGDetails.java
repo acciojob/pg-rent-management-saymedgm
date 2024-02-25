@@ -1,60 +1,63 @@
 package com.driver;
 
 public class PGDetails {
-	 private int id;
-	    private String name;
-	    private double rent;
-	    private int rooms;
+	private int id;
+	private String name;
+	private double rent;
+	private int rooms;
 
-	    public PGDetails() {
-	    	// your code goes here
-	    }
+	public PGDetails() {
+		// Default constructor needed for frameworks like Spring to instantiate the class.
+	}
 
-	    public PGDetails(int id, String name, double rent, int rooms) {
-	    	// your code goes here
-	    }
+	public PGDetails(int id, String name, double rent, int rooms) {
+		this.id = id;
+		this.name = name;
+		this.rent = rent;
+		this.rooms = rooms;
+	}
 
-	    // Getters
-	    public int getId() {
-	    	// your code goes here
-	        return id;
-	    }
+	// Getters
+	public int getId() {
+		return id;
+	}
 
-	    public String getName() {
-	    	// your code goes here
-	        return name;
-	    }
+	public String getName() {
+		return name;
+	}
 
-	    public double getRent() {
-	    	// your code goes here
-	        return rent;
-	    }
+	public double getRent() {
+		return rent;
+	}
 
-	    public int getRooms() {
-	    	// your code goes here
-	        return rooms;
-	    }
+	public int getRooms() {
+		return rooms;
+	}
 
-	    // Setters
-	    public void setId(int id) {
-	    	// your code goes here
-	    }
+	// Setters
+	public void setId(int id) {
+		this.id = id;
+	}
 
-	    public void setName(String name) {
-	    	// your code goes here
-	    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-	    public void setRent(double rent) {
-	    	// your code goes here
-	    }
+	public void setRent(double rent) {
+		this.rent = rent;
+	}
 
-	    public void setRooms(int rooms) {
-	    	// your code goes here
-	    }
+	public void setRooms(int rooms) {
+		this.rooms = rooms;
+	}
 
-	    @Override
-	    public String toString() {
-	    	// your code goes here
-	    	return null;
-	    }
+	@Override
+	public String toString() {
+		return "PGDetails{" +
+				"id=" + id +
+				", name='" + name + '\'' +
+				", rent=" + rent +
+				", rooms=" + rooms +
+				'}';
+	}
 }

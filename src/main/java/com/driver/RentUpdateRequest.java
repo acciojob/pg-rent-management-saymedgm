@@ -1,30 +1,30 @@
 package com.driver;
 
 public class RentUpdateRequest {
-	 private double rent;
+	private double rent;
 
-	    public RentUpdateRequest() {
-	    	// your code goes here
-	    }
+	public RentUpdateRequest() {
+		// Default constructor needed for frameworks like Spring to instantiate the class.
+	}
 
-	    public RentUpdateRequest(double rent) {
-	    	// your code goes here
-	    }
+	public RentUpdateRequest(double rent) {
+		this.rent = rent;
+	}
 
-	    // Getter
-	    public double getRent() {
-	    	// your code goes here
-	        return rent;
-	    }
+	// Getter
+	public double getRent() {
+		return rent;
+	}
 
-	    // Setter
-	    public void setRent(double rent) {
-	    	// your code goes here
-	    }
+	// Setter
+	public void setRent(double rent) {
+		this.rent = rent;
+	}
 
-	    @Override
-	    public String toString() {
-	    	// your code goes here
-	    	return null;
-	    }
+	@Override
+	public String toString() {
+		return "RentUpdateRequest{" +
+				"rent=" + rent +
+				'}';
+	}
 }
